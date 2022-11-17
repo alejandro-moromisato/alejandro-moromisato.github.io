@@ -15,3 +15,7 @@ $("#btnPortafolio").click(function(){
 $("#btnContacto").click(function(){
     $("html,body").animate({scrollTop:$("#Contacto").offset().top},1000);
 });
+
+$("#btnAcerca2").click(function(){
+    $("html,body").animate({scrollTop:$("#Acerca").offset().top},500);
+});
