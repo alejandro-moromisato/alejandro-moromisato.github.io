@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+
+/* General */
+
+*{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a{
+    text-decoration: none   ;
+}
+
+/* Inicio - Navegacion */
+
+.navbar{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    min-height: 80px;
+    font-weight: 700;
+}
+
+.navbar i{
+    font-size: 34px;
+}
+
+.nav-link{
+    color: #fff !important;
+    transition: all ease 1s;
+}
+
+.nav-link:hover{
+    color: #00F260 !important;
+}
+
+
+.navbar-brand img{
+    min-width: 60px;
+    max-width: 80px;
+}
+
+/* Fin - Navegacion */
+
+/* Inicio - Carusel */
+
+.carousel-indicators button{
+    background-color: #fff  !important;
+}
+
+.carousel-item img{
+    background-size: cover;
+    filter: brightness(70%); 
+    height: 85vh;
+}
+
+/* Fin - Carusel */
+
+/* Inicio - Viajes */
+
+#viajes{
+    padding: 100px 0;
+    background: #11998e;
+}
+
+.content-center{
+    max-width: 800px;
+    margin: 0 auto  60px auto;
+    text-align: center;
+    padding:10px;
+    border:5px solid #000;
+    width: 60%;
+    background: #fff;
+}
+
+.viaje-container{
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+.viaje-container img{
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    filter: brightness(70%); 
+    cursor: pointer;
+    height: 300px;
+    width: 100%;
+}
+
+.viaje-container:hover img{
+    -moz-transition: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transition: all 0.8s;
+}
+
+.detalle-viaje{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 100;
+}
+
+/* Fin - Viajes */
+
+
+/* Inicio -  Contacto */
+
+#contacto{
+    padding: 100px 0;
+}
+
+/* Fin - Contacto */
+
+/* Inicio - Footer */
+
+#footer{
+    padding: 50px 0 0 0;
+}
+
+.japon{
+	background-image:radial-gradient(circle, red 33%, white 33%, white);
+    width:30px;height:20px;margin:5px;
+	display:inline-block;
+	border:1px solid #000;
+    line-height: 10px;
+}
+
+.alemania{
+	background-image:linear-gradient(black 33%, red 33%, red 66.66%, yellow 66.66%);
+    width:30px;height:20px;margin:5px;
+	display:inline-block;
+	border:1px solid #000;
+    line-height: 10px;
+}
+
+.francia{
+	background-image:linear-gradient(90deg,red 33%, white 33%, white 66.66%, blue 66.66%);
+    width:30px;height:20px;margin:5px;
+	display:inline-block;
+	border:1px solid #000;
+    line-height: 10px;
+}
+
+.colombia{
+	background-image:linear-gradient(yellow 33%, blue 33%, blue 66.66%, red 66.66%);
+    width:30px;height:20px;margin:5px;
+	display:inline-block;
+	border:1px solid #000;
+    line-height: 10px;
+}
+
+/* Fin - Footer */
+

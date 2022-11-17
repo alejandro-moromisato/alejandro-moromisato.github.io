@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web con Boostrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/icono.ico">
+</head>
+<body>
+    <!-- Menú de Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-globe-americas"></i> Agencia de Viajes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center" style="margin-left: auto;">
+                    <li><a href="#" class="nav-link">Inicio</a></li>
+                    <li><a href="#" class="nav-link">Nosotros</a></li>
+                    <li><a href="#" class="nav-link">Vuelos</a></li>
+                    <li><a href="#" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Carrusel -->
+
+    <div class="container-xxl">
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/banner.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-light">
+              <h5>PAQUETES NACIONALES</h5>
+              <p>¿Te gustaría conocer las maravillas de nuestro rico y hermoso país, Perú?
+                No esperes más en Agencia de Viaje Yaku Travel tenemos las mejores promociones diseñadas especialmente para ti.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/banner2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-white">         
+              <h5>PAQUETES TURÍSTICOS</h5>
+              <p>Descubre paquetes turísticos económicos y reserva al mejor precio!. Escoge el destino y nosotros armaremos tu viaje o tour al mejor precio.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-white">
+              <h5>PAQUETES INTERNACIONALES</h5>
+              <p>Te gustaría conocer los destinos más visitados del mundo, recorrer cada rincón descubriendo todas las maravillas que te ofrece la naturaleza, vivir nuevas historias y conocer nuevas culturas?</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+          <span class="visually-hidden bg-primary">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+          <span class="visually-hidden bg-primary">Next</span>
+        </button>
+      </div>
+      <br>
+    </div>
+
+    <!-- Viajes -->
+
+    <section id="viajes">
+      <div class="container-fluid">
+        <div class="content-center">
+          <h2>Paquetes turísticos</h2>
+          <p>¡El mundo a tu alcance! Planifica tus viajes para el 2021!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="viaje-container">
+              <div class="detalle-viaje text-light">
+                <h2>Cusco Imperial</h2>
+                <p>Paquete 6Dias/5Noches</p>
+                <p>- DESDE USD$469</p>
+              </div>
+              <img src="img/viaje1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="viaje-container">
+              <div class="detalle-viaje text-light">
+                <h2>Pucallpa</h2>
+                <p>Paquete 9Dias/8Noches</p>
+                <p>- DESDE USD$169</p>
+              </div>
+              <img src="img/viaje2.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="viaje-container">
+              <div class="detalle-viaje text-light">
+                <h2>Caminos del Inca</h2>
+                <p>Paquete 7Dias/6Noches</p>
+                <p>- DESDE USD$399</p>
+              </div>
+              <img src="img/viaje3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="viaje-container">
+              <div class="detalle-viaje text-light">
+                <h2>Punta Cana</h2>
+                <p>Paquete 7Dias/6Noches</p>
+                <p>- DESDE USD$569</p>
+              </div>
+              <img src="img/viaje4.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="viaje-container">
+              <div class="detalle-viaje text-light">
+                <h2>Puno</h2>
+                <p>Paquete 10Dias/9Noches</p>
+                <p>- DESDE USD$369</p>
+              </div>
+              <img src="img/viaje5.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="viaje-container">
+              <div class="detalle-viaje text-light">
+                <h2>Ica</h2>
+                <p>Paquete 4Dias/3Noches</p>
+                <p>- DESDE USD$100</p>
+              </div>
+              <img src="img/viaje6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <div class="container">
+        <div class="content-center">
+          <h2>Contactenos</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 topmargin-sm">
+            <h3>Nuestros Clientes</h3>
+            <p>Contamos con una cartera de clientes de lo más extensa y variada, en el Perú 
+              somos distribuidores de viajes de los principales sistemas de lealtad y estamos
+              comprometidos con la cultura, mostrando nuestro apoyo en el rubro a través de auspicios.
+              Nos prefieren más de 850 empresas corporativas, 27 000 personas naturales, 1,100 agencias
+              de viajes del Perú y la más exclusiva red de agencias internacionales. En el área de turismo 
+              receptivo, estamos seguros de contar con los requisitos que nos harán su mejor socio. 
+              El equipo de turismo receptivo conoce todo el Perú, sus recursos e infraestructura turística. 
+              Ofrecemos nuestra experiencia para brindar a sus clientes el mejor servicio y atención.</p>
+          </div>
+
+          <div class="col-md-6">
+            <br>
+            <form action="" class="form-inline">
+              
+              <div class="row mb-3">
+                  <div class="form-group col-md-6">
+                      <input id="nombre" type="text" class="form-control" placeholder="Nombre" autocomplete="off" required>  
+                  </div>
+                  <br>
+                  <br>
+                  <div class="form-group col-md-6">
+                    <input id="apellido" type="text" class="form-control" placeholder="Apellidos" autocomplete="off" required>  
+                  </div>
+              </div>
+              
+              <div class="row mb-3">
+                <div class="form-group col-md-12">
+                  <input id="email" type="email" class="form-control" placeholder="Correo" autocomplete="off" required>  
+                </div> 
+              </div>
+
+              <div class="mb-3">                
+                <textarea id="mensaje" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje" autocomplete="off" required></textarea>
+              </div>
+
+              <div class="d-grid col-md-12">
+                <button class="btn btn-dark btn-lg btn-block" id="btnEnviar">Enviar</button>
+              </div> 
+            
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark text-center text-white mt-5">
+    
+      <div class="container p-2">
+        <!-- Redes Sociales -->
+        <section class="mb-2">
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        
+        <section class="mb-4">
+          <p>
+            Somos la agencia de viajes con la más variada oferta y opciones para que planifiques
+             tus próximas vacaciones o viaje de negocio.
+          </p>
+        </section>
+
+
+        <section class="mb-5">
+          
+          <div class="row">
+  
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Productos</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Vuelos</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Vuelos + Hotel</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Paquetes</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Actividades</a>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-2 mb-md-0">
+              <h5 class="text-uppercase">Conoce el mundo</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <span class="japon"></span>
+                </li>
+                <li>
+                  <span class="alemania"></span>
+                </li>
+                <li>
+                  <span class="francia"></span>
+                </li>
+                <li>
+                  <span class="colombia"></span>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Nosotros</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Asesoría Integral</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Área de prensa</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Ubícanos</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Términos y condiciones generales</a>
+                </li>
+              </ul>
+            </div>
+ 
+
+          </div>
+
+        </section>
+
+      </div>
+
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Desarrollado por:
+        <a class="text-white" href="#">Alejandro Moromisato Rivas</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="https://kit.fontawesome.com/423a456e78.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Inicio - Header */
+
+.header{
+    background: #0f0c29;
+    width: 100%;
+    height: 100px;
+}
+
+.header .logo img{
+    width: 120px;
+    height: 100px;
+    float: left;
+    line-height: 100px;
+    margin-left: 40px;
+    background-size: cover;
+}
+
+.header .nav{
+    height: 100px;
+    margin-right: 40px;
+    float:right;
+    position: relative;
+    z-index: 100;
+}
+
+.header .nav ul{
+    list-style: none;
+}
+
+.header .nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.header .nav ul li a{
+    text-decoration: none;
+    color: black;
+    line-height: 100px;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header .nav ul li a:hover{
+    color: #396afc;
+    transition: all ease 1s;
+    transform: translateY(-10%);
+    display: block;
+}
+
+.header .barra{
+    color: #fff;
+    line-height: 100px;
+    padding: 0 40px;
+    cursor: pointer;
+    font-size: 30px;
+    opacity: 0;
+    z-index: 0;
+}
+
+.header .barra:hover{
+    color: #396afc;
+    transition: all ease 1s;
+}
+
+/* Fin - Header */
+
+/* Inicio - Baner */
+
+.contenedor{
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+    position: relative;
+    font-size: 16px;
+}
+
+.contenedor:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+
+
+.contenedor .banner{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    width: 50%;
+    transform: translateX(-50%);
+}
+
+.contenedor .banner h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contenedor .banner p{
+    font-size: 24px;
+}
+
+/* Fin - Baner */
+
+/* Inicio - Nosotros */
+
+.nosotros{
+    width: 100%;
+    height: 600px;
+    padding-top: 50px;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+}
+
+.nosotros .titulo-nosotros{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #fff;
+    width: 50%;
+    margin: auto auto 50px auto;
+}
+
+.nosotros .titulo-nosotros h2{
+   font-size: 30px;
+   font-weight: 500;
+   color: #fff;
+}
+
+.nosotros .titulo-nosotros hr{
+    width: 50%;
+    height: 2px;
+    margin: 5px auto auto auto;
+    background:#fff;
+    border: none;
+}
+
+
+.nosotros .informacion-nosotros{
+    float: left;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.nosotros .informacion-nosotros p {
+    line-height: 28px;
+}
+
+.nosotros .nosotros-img{
+    float: right;
+    width: 30%;
+    height: 100px;
+    margin-right: 100px;
+}
+
+.nosotros .nosotros-img img{
+    height: 300px;
+    border-radius: 5px;
+}
+
+/* Fin - Nosotros */
+
+/* Inicio - Cursos */
+
+.cursos{
+    width: 100%;
+    background: url(../img/fondo2.jpg);
+    background-position: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cursos .contenedor-cursos{
+    padding: 50px 0;
+    background: rgba(0,0,0,0.8);
+}
+
+.cursos .contenedor-cursos .titulo-cursos{
+    width: 50%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    border: 2px solid #fff;
+    padding:10px;
+}
+
+.cursos .contenedor-cursos .titulo-cursos h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.cursos .contenedor-cursos .titulo-cursos hr{
+    width: 50%;
+    margin: auto;
+    background: #fff;
+    border: none;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.cursos .contenedor-cursos .lista-cursos{
+    margin: auto ;
+    width: 80%;
+    text-align: center;
+}
+
+.cursos .contenedor-cursos .lista-cursos ul{
+    list-style: none;
+}
+
+.cursos .contenedor-cursos .lista-cursos ul li{
+    padding: 10px 10px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cursos .contenedor-cursos .lista-cursos .btn-cursos{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background: #CAC531;
+    color: #fff;
+    cursor: pointer;
+    margin: 15px auto;
+    transition: all ease 1s;
+}
+
+.cursos .contenedor-cursos .lista-cursos .btn-cursos:hover{
+    background: #45B649;
+
+}
+
+/* Fin - Cursos */
+
+/* Inicio - Informacion */
+
+.informacion{
+    width: 100%;
+    height: auto;
+}
+
+.informacion .titulo-contacto{
+    width: 50%;
+    margin: 50px auto 50px auto;
+    text-align: center;
+    padding:10px;
+    border: 2px solid black;
+    display: block;
+}
+
+.informacion .titulo-contacto h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.informacion .titulo-contacto hr{
+    background: black;
+    height: 2px;
+    width: 50%;
+    margin: auto;
+    border: none;
+    border-radius: 2px;
+}
+
+.informacion .contenedor-contacto{
+  position: relative;
+  display: block;
+  height: 250px;
+}
+
+
+.informacion .informacion-logo{
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.informacion .informacion-logo img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+}
+
+.informacion .contenedor-contacto .contenedor-info{
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.contenido-informacion{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contenido-informacion h3{
+    color: #373B44;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contenido-informacion p{
+   margin-bottom: 20px;
+}
+
+.contenido-informacion a{
+    text-decoration: none;
+    padding: 10px 15px;
+    background:#514A9D;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.contenido-informacion a:hover{
+    background: #24C6DC;
+    transition: ease 1.25s;
+}
+
+/* Fin - Informacion */
+
+
+/* Inicio - Footer */
+
+.footer{
+    width: 100%;
+    border-top: 1px solid #2c3e50;
+    height: 30px;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.footer-contenedor{
+    text-align: center;
+}
+
+.footer-contenedor p{
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.footer-contenedor span{
+    color: #E0EAFC;
+}
+
+/* Fin - Footer */
+
+.abrir{
+    transform: translateX(0%) !important;
+    transition: all ease-in 1s;
+}
+
+
+@media only screen and (max-width:750px){
+
+    /* Header */
+
+    .header{
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .header .nav{
+        position: absolute;
+        z-index: 100;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #0f0c29;
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        transform: translateX(-100%);
+        transition: all ease-in 1s;
+    }
+
+    .header .nav ul li{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header .nav ul li a:hover{
+        color: #11998e;
+        transform: translateY(0%);
+    }
+
+    .header .barra{
+        position: absolute;
+        right: 0;
+        z-index: 200;
+        opacity: 1;
+        margin-right: 40px;
+        overflow-x: hidden;
+    }
+
+    /* Header */
+
+    /* Banner */
+    .contenedor .banner h2{
+        font-size: 26px;
+    }
+
+    .contenedor .banner p{
+        font-size: 18px;
+    }
+
+    /* Banner */
+
+    /* Nosotros */
+
+    .nosotros{
+        height: 950px;
+    }
+
+    .nosotros .informacion-nosotros{
+       width: 70%;
+       text-align: center;
+    }
+
+    .nosotros .informacion-nosotros p{
+        font-size: 14px;
+    }
+
+    .nosotros .nosotros-img{
+        display: block;
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    /* Nosotros */
+
+    /* Contacto */
+
+    .informacion{
+        height: 650px;
+    }
+    
+    .informacion .titulo-contacto{
+        margin-bottom: 20px;
+    }
+
+    .informacion .contenedor-contacto{
+        height: 150px;
+    }
+
+    .informacion .contenedor-contacto .informacion-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .informacion .contenedor-contacto .contenedor-info{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-top: 0;
+    }
+    .informacion .contenedor-contacto .contenedor-info .contenido-informacion{
+        transform: none;
+    }
+ 
+    /* Contacto */
+
+}
+
+@media only screen and (max-width:1159px){
+    .nosotros{
+        height: 680px;
+    }
+}
+
+@media only screen and (max-width:1020px){
+
+    .nosotros{
+        height: 500px;
+    }
+
+    .nosotros .informacion-nosotros{
+        width: 80% !important;
+        text-align: center;
+        float: none;
+    }
+
+    .nosotros .informacion-nosotros p {
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .nosotros .informacion-nosotros{
+        width: 40%;
+        display: block;
+    }
+
+    .nosotros-img img{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width:730px){
+
+    .nosotros{
+        height: 550px;
+    }
+
+}
+
+@media only screen and (max-width:770px){
+
+    .banner h2{
+        font-size: 30px !important;
+    }
+
+    .banner p{
+        font-size: 20px !important;
+    }
+
+    .nosotros{
+        height: 600px;
+    }
+
+    .nosotros .informacion-nosotros{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 0 auto;
+     }
+
+    .nosotros .informacion-nosotros p{
+        font-size: 14px;
+    }
+
+    .cursos .contenedor-cursos .lista-cursos ul li{
+        font-size: 14px;
+    }
+
+  
+}
+
+@media only screen and (max-width:600px){
+
+    .nosotros{
+        height: 650px;
+    }
+
+    .informacion{
+        height: 700px;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+
+    .banner h2{
+        font-size: 24px !important;
+    }
+
+    .banner p{
+        font-size: 16px !important;
+    }
+
+
+    .nosotros{
+        height: 750px;
+    }
+    .footer .footer-contenedor p{
+        font-size: 12px;
+    }
+}

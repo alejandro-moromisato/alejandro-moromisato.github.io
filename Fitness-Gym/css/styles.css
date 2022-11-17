@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #1d273b; 
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+
+.link {
+    text-decoration: none;
+    display: block;
+    background: navy;
+    color: #fff;
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    transition: all 0.25s;
+}
+
+.link:hover{
+    transform: translateY(-6px);
+    color: lightgrey;
+}
+
+/* Inicio - Header */
+
+nav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+    background: #0F2027;
+}
+
+.contenedor { 
+    width: 90%; 
+    max-width: 1000px;
+    margin: auto; /* Centra todos los elementos */
+    overflow: hidden; /* Corta los elementos que superan al contenedor */
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    padding: 0 40px;
+}
+
+nav .logo i {
+    font-size: 80px;
+    color: #fff;
+}
+
+.enlaces-header {
+    font-weight: 300;
+}
+
+.enlaces-header a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block; /* Importante por efecto hover */
+}
+
+.enlaces-header a::after {
+    content:"";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width  .3s;
+}
+
+.enlaces-header a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.bar {
+    height: 80px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+    display: none;
+}
+
+.bar > i{
+    font-size: 25px;
+    line-height: 80px; /* Tamaño de la casilla */ 
+    color: #fff;
+}
+
+.bar i:hover{
+    color: red;
+}
+
+header::before{
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+.contenido-header {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contenido-header> img{
+    width: 400px;
+    height: 400px;
+    animation: ease-in animat 1s;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+@keyframes animat{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.textos-header{
+    text-align: center;
+}
+
+.textos-header p{
+    font-weight: 100;
+    margin: 14px 0;
+    color:teal;
+
+}
+
+.textos-header a{
+    display: block;
+    width: 130px;
+    margin-top: 10px;
+    background: #1fde82;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    padding:  10px 0px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+    margin: auto;
+    transition: all 0.25s;
+}
+
+.textos-header a:hover{
+    transform: translateY(-10px);
+}
+
+
+/* Fin - Header */
+
+/* Inicio - Entrenamiento */
+
+.entrenamiento{
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contenedor1 {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.contenedor-articulo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+
+.articulo {
+    width: 31%;
+    background: snow;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 20px 30px 20px 30px;
+}
+
+.articulo:hover {
+    box-shadow: 4px 4px 10px rgba(49, 17, 3, 0.815);
+}
+
+.articulo img {
+    width: 250px;
+    height: 250px;
+    padding: 10px 0;
+}
+
+/* Fin - Entrenamiento */
+
+/* Inicio - Nutricion */
+
+.nutricion {
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    
+}
+
+.nutricion img {
+    width: 300px;
+    height: 300px;
+}
+
+.contenido-nutricion {
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+}
+
+.textos-nutricion {
+    width: 100%;
+    align-items: center;
+}
+
+/* Inicio - Tienda */
+
+.tienda {
+    background: #616161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.contenedor-tienda {
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto{
+    width: 35%;
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.producto:hover {
+    box-shadow: 4px 4px 10px rgba(49, 17, 3, 0.815);
+}
+
+.productos img{
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.producto p{
+    margin-top: 10px;
+    color:red;
+}
+
+.texto-tienda {
+   width: 600px;
+   margin:auto
+}
+
+/* Fin - Tienda */
+
+/* Inicio - Extra */
+.extra img{
+    width: 400px;
+    height: 400px;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-extra{
+    margin: 30px 30px 0 0;
+}
+
+.contenedor-extra h4{
+    font-size: 20px;
+    background: slategrey;
+    width: 450px;
+    padding: 10px 0 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.contenedor-extra i{
+    color: #1fde82;;
+}
+
+/* Fin - Extra */
+
+/* Inicio - Footer */
+
+footer {
+    background: #f2f2f2;
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter {
+    width: 20%;
+    text-align: center;
+}
+
+.partFooter a {
+    display: block;
+    text-decoration: none;
+    color:darkslategray;
+}
+
+
+.social-media i{
+    font-size: 34px;
+    display: inline-block;
+    border: 1px solid #1d273b;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all ease-in-out ;
+    color: black;
+}
+
+.fa-facebook-f:hover{
+    background: #3b5998;
+    color: #fff;
+}
+
+.fa-twitter:hover{
+    background: #55acee;
+    color: #fff;
+}
+
+.fa-instagram:hover{
+    background: #833AB4;
+    color: #fff;
+}
+
+.fa-youtube:hover{
+    background: #bb0000;
+    color: #fff;
+}
+
+
+/* Fin - Footer */
+
+/* Breakpoints Responsive */
+
+@media screen and (max-width:800px){
+    nav .logo i {
+        font-size: 45px;
+    }   
+    .contenido-header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 880px;
+    }
+    .textos-header{
+        margin: 0;
+    }
+    
+    .articulo{
+        width: 45%;
+    }
+
+    .articulo img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .nutricion{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .contenedor-tienda{
+        flex-direction: column-reverse; /* Coloca al elementos uno encima de otro */
+    }
+
+    .productos {
+        width: 100%;
+    }
+
+    .texto-tienda {
+        width: 100%;
+    }
+
+    .extra{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .contenedor-extra {
+        margin: 0 0 40px 0;
+    }
+
+    footer{
+        justify-content: space-evenly;
+    }
+
+    .partFooter{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .nav{
+        padding: 0 40px;
+    }
+
+    .enlaces-header {
+        position: fixed;
+        background: #232526;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+        transition: all 1s;
+    }
+
+    .abrir {
+        clip-path: circle(141.2% at 100% 0);
+        transition: all 1s;
+    }
+
+    .bar{
+        display: block;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    .contenido-header{
+        height: 650px;
+    }
+
+    .textos-header p {
+        font-size: 15px;
+    }
+
+    .contenido-header img{
+        width: 200px;
+    }
+
+    .titulo{
+        font-size: 25px;
+    }
+
+    .articulo{
+        width: 95%;
+    }
+    
+    .articulo p{
+        margin-bottom: 10px;
+    }
+
+    .contenido-nutricion{
+        flex-direction: column-reverse;
+    }
+
+    .nutricion img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .nutricion {
+        height: 650px;
+        padding: 30px 0;
+    }
+
+    .textos-nutricion {
+        margin: 10px 0;
+    }
+    
+    .textos-nutricion p {
+        text-align: center;
+        padding:  10px 0;
+    }
+    
+    .productos .producto{
+        width: 95%;
+    }
+
+    .texto-tienda {
+        text-align: center  ;
+    }
+
+    .texto-tienda p{
+        margin-bottom: 10px;
+    }
+
+    .link{
+        margin: auto;
+    }
+
+    .contenedor-extra h4{
+        font-size: 14px;    
+        width: 340px;    
+    }
+
+    .contenedor-extra img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .partFooter{
+        width: 95%;
+    }
+}
