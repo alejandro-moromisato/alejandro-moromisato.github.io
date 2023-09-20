@@ -19,3 +19,13 @@ $("#btnContacto").click(function(){
 $("#btnAcerca2").click(function(){
     $("html,body").animate({scrollTop:$("#Acerca").offset().top},500);
 });
+
+
+
+$("#idLeerMas").click(function(event) {
+    event.preventDefault(); // Evita que el enlace redireccione
+    $("#idtexto-oculto").removeClass("contenido-oculto");   
+    $("#idtexto-oculto").addClass("inline-p"); 
+    $("#idLeerMas").removeClass("inline-p");
+    $("#idLeerMas").addClass("contenido-oculto");
+  });

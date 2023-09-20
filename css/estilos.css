@@ -122,11 +122,12 @@ section{
 	background-size: cover;
 	box-sizing: border-box;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3.5em;
    
 }
 
 .headshot-2 {
-	background-image: url(../img/img_yo.png), linear-gradient(to bottom right, #21b2a6, #00a1a7, #4eb980);
+	background-image: url(../img/Foto.jpeg), linear-gradient(to bottom right, #21b2a6, #00a1a7, #4eb980);
 }
 
 .imagen-card{
@@ -143,6 +144,7 @@ section{
     margin:auto;    
     padding:15px;
     margin-top:10px;
+    cursor: pointer;
 }
 
 .titulo-seccion-portafolio{
@@ -153,6 +155,7 @@ section{
     margin:auto;    
     padding:15px;
     margin-top:10px;
+    cursor: pointer;
 }
 
 
@@ -160,6 +163,7 @@ section{
     color: #000000;
     font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .titulo2-acercademi{
@@ -171,7 +175,7 @@ section{
 
 .descripcion-acercademi{
     line-height:2em;
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -189,6 +193,12 @@ section{
     height:60px;
 }
 
+.centrar-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
 .estilo-apps:hover{
     transform: translateY(-10px);
 }
@@ -204,6 +214,21 @@ section{
     font-family: 'Poppins', sans-serif;
 }
 
+.lbl-leermas{
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenido-oculto{
+    display: none;
+}
+
+.inline-p {
+    display: inline;
+    margin: 0; /* Para eliminar los márgenes predeterminados */
+  }
 
 .contenido-card{
     width:100%;
@@ -225,6 +250,10 @@ section{
 
 .imagen-card:hover .contenido-card{
  opacity: 0.9;
+}
+
+.txtVerMas{
+    color:#2bbd14;
 }
 
 .btn-vermas{
