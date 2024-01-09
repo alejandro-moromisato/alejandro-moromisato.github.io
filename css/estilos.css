@@ -10,6 +10,11 @@ section{
     background:rgba(0,0,0,0.9);
 }
 
+#Inicio{
+    width: 100vh;
+}
+
+
 .navbar-extra{
     border-bottom:5px solid #009E60;
     background: rgba(0,0,0,0.9)!important;
