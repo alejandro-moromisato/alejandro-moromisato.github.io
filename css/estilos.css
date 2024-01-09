@@ -10,10 +10,6 @@ section{
     background:rgba(0,0,0,0.9);
 }
 
-#Inicio{
-    width: 100vh;
-}
-
 
 .navbar-extra{
     border-bottom:5px solid #009E60;
@@ -330,3 +326,4 @@ section{
     text-decoration: none;
     color:#fff;
 }
+
