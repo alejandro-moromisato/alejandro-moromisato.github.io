@@ -36,7 +36,7 @@ section{
 }
 
 .fondo{
-    background:url("../img/background_moromisato.jpg");
+    background:url("../img/BackGroundDev.png");
     width:100%;
     height: 100%;
     position: relative;
@@ -128,7 +128,8 @@ section{
 }
 
 .headshot-2 {
-	background-image: url(../img/Foto.jpeg), linear-gradient(to bottom right, #21b2a6, #00a1a7, #4eb980);
+	/* background-image: url(../img/AlejandroMoromisato.jpeg), linear-gradient(to bottom right, #21b2a6, #00a1a7, #4eb980); */
+    background-image: url(../img/AlejandroMoromisato.jpeg);
 }
 
 .imagen-card{
